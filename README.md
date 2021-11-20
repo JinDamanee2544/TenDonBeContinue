@@ -1,2 +1,2 @@
 ถ้างง ทักมาถามได้ฮะ ไม่งงสิแปลก เย้ ;-;
-<img src="../testPic/Mizuhara.png">
+![test](https://github.com/JinDamanee2544/Login/blob/main/Mizuhara.jpg?raw=true)
