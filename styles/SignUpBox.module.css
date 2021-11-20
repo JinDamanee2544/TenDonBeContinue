@@ -1,5 +1,4 @@
-/*BASE*/
-.LoginBox{
+.SignUpBox{
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -12,17 +11,21 @@
     -o-border-radius: 20px;
     padding : 40px;
 }
-.head{
-    font-size: 36px;
-    color: #fff;
-    font-weight: bold;
+.firstName, .lastName {
+    width: 49%;
 }
-.email, .password{
+.name{
+    color: #fff;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.email,.password,.confirmPassword{
     color: #fff;
     margin-top: 24px;
 }
 /*PLACE HOLDER*/
-.LoginBox input{
+.SignUpBox input{
     background-color: #E5E5E5;
     border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -31,7 +34,7 @@
     -o-border-radius: 50px;
 }
 /*BUTTON*/
-.LoginBox button{
+.SignUpBox button{
     color:#fff;
     font-size: 18px;
     font-weight: bold;
@@ -46,38 +49,19 @@
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
-.LoginBox button:hover{
+.SignUpBox button:hover{
     color :#fff;
     background-color: #8400f8;
     outline: none;
 }
 /*Label*/
-.LoginBox label:first-child{
-    color: #fff;
-    font-size: 36px;
-    font-weight: bold;
-}
-.LoginBox label:nth-last-child(2){
+.SignUpBox label{
     font-size: 18px;
     margin-bottom: 12px;
     font-weight: lighter;
 }
-/*Don't have an account SignUp!*/
-.caution{
-    margin-top: 24px;
-    display: flex;
-    justify-content: center;
+.head{
+    font-size: 36px;
     color: #fff;
-    font-size: 16px;
-    font-weight: lighter;
-}
-.signUpLink{
-    margin-left: 10px;
     font-weight: bold;
-    cursor: pointer;
-    color : #AE51FF;
-    text-decoration: none;
-}
-.signUpLink:hover{
-    color :#8400f8;
 }
