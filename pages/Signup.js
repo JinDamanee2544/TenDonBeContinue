@@ -1,12 +1,11 @@
 import style from "../styles/home.module.css";
-import LoginBox from "../component/LoginBox";
 import SettingTab from "../component/SettingTab";
-import SignUpBox from "../component/SignUpBox";
-import { useState,useReducer } from "react";
+import {useState,useReducer, Suspense } from "react";
+import SignUpBox from '../component/SignUpBox';
 
-export default function Home() {
+export default function Signup() {
   
-
+  /*
   const [isLogin,setIsLogin] = useState(false);
   const reducer=(state,action)=>{
     switch(action.type){
@@ -17,17 +16,19 @@ export default function Home() {
     }
   }
   const [result,dispatch] = useReducer(reducer,isLogin)
+  */
   return (
     <div>
       <div className={style.background}>
         <div className={style.BackBox}>
-          {isLogin&&<LoginBox/>}
-          {!isLogin && <SignUpBox/>}
+          <SignUpBox/>
           <SettingTab/>
         </div>
-        <button onClick={()=>dispatch({type:"LOGIN"})}>LOGIN</button>
-        <button onClick={()=>dispatch({type:"SIGNUP"})}>SIGNUP</button>
       </div>
     </div>
   )
+  /*
+  <button onClick={()=>dispatch({type:"LOGIN"})}>LOGIN</button>
+  <button onClick={()=>dispatch({type:"SIGNUP"})}>SIGNUP</button>
+  */
 }

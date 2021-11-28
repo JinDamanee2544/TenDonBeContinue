@@ -1,7 +1,13 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import { Suspense } from 'react'
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <div>
+        <Component {...pageProps} />
+    </div>
+  )
+  
 }
 
 export default MyApp

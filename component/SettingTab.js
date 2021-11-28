@@ -1,36 +1,39 @@
 import style from '../styles/SettingTab.module.css'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle,faCog,faUserPlus,faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
 const SettingTab=()=>{
 
-    const profileBtn=()=>{
-        return // Handle
+    /*
+    const router = useRouter();
+    
+    const [isSignup,setIsSignup] = useState(true); 
+    const thisPath = router.pathname;
+    if(thisPath==="/Login"){
+        setIsSignup(false)
     }
-    const settingBtn=()=>{
-        return // Handle
+    if(thisPath==="/Signup"){
+        setIsSignup(true);
     }
-    const signUpBtn=()=>{
-        return // Handle
-    }
-    const signOutBtn=()=>{
-        return // Handle
-    }
-
+    */
     return (
         <div className={style.tab}>
             <Link href='#'> 
-                <a onClick={profileBtn}><FontAwesomeIcon icon={faUserCircle}/></a>
+                <a><FontAwesomeIcon icon={faUserCircle}/></a>
             </Link>
             <Link href='#'>
-                <a onClick={settingBtn}><FontAwesomeIcon icon={faCog}/></a>
+                <a><FontAwesomeIcon icon={faCog}/></a>
             </Link>
-            <Link href='#'>
-                <a onClick={signUpBtn}><FontAwesomeIcon icon={faUserPlus}/></a>
-            </Link>
-            <Link href='#'>
-                <a onClick={signOutBtn}><FontAwesomeIcon icon={faSignOutAlt}/></a>
-            </Link>
+        
+            {<Link href='/Signup'>
+                <a><FontAwesomeIcon icon={faUserPlus}/></a>
+            </Link>}
+
+            {<Link href='/Login'>
+                <a><FontAwesomeIcon icon={faSignOutAlt}/></a>
+            </Link>}
         </div>
     )
 }
