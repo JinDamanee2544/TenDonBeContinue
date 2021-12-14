@@ -1,0 +1,44 @@
+.mainSection {
+  width: 350px;
+  height: 120px;
+  background-color: #373E47;
+  margin: 0 20px 20px 0;
+  position: relative;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  margin: 0;
+  float: left;
+}
+
+.firstName {
+  font-family: 'Rowdies', cursive;
+  font-size: 2rem;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  left: 140px;
+}
+
+.lastName {
+  font-family: 'Rowdies', cursive;
+  font-size: 2rem;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  left: 140px;
+  top: 40px;
+}
+
+.rank {
+  font-family: 'Rowdies', cursive;
+  font-size: 1rem;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  left: 140px;
+  top: 75px;
+}

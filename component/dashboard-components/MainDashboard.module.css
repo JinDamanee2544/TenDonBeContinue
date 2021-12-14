@@ -1,0 +1,82 @@
+.mainBoard {
+  width: 840px;
+  height: 560px;
+  margin: auto;
+  border-radius: 50px;
+  background-color: #373E47;
+  position: relative;
+  top: 75px;
+  padding: 50px;
+}
+
+.searchCourseButton {
+  position: relative;
+  display: inline;
+  right: 75px;
+  top: 50px;
+}
+.searchCourseButton:hover {
+  position: relative;
+  display: inline;
+  right: 75px;
+  top: 50px;
+  cursor: grab;
+}
+.searchCourseButton:active {
+  position: relative;
+  display: inline;
+  right: 75px;
+  top: 50px;
+  cursor: grabbing;
+}
+
+.resumeCourseButton {
+  position: relative;
+  display: inline;
+  left: 715px;
+  top: 45px;
+}
+.resumeCourseButton:hover {
+  position: relative;
+  display: inline;
+  left: 715px;
+  top: 45px;
+  cursor: grab;
+}
+.resumeCourseButton:active {
+  position: relative;
+  display: inline;
+  left: 715px;
+  top: 45px;
+  cursor: grabbing;
+}
+
+.viewAllMyCourseButton {
+  position: relative;
+  display: inline;
+  left: 265px;
+  top: 340px;
+}
+.viewAllMyCourseButton:hover {
+  position: relative;
+  display: inline;
+  left: 265px;
+  top: 340px;
+  cursor: grab;
+}
+.viewAllMyCourseButton:active {
+  position: relative;
+  display: inline;
+  left: 265px;
+  top: 340px;
+  cursor: grabbing;
+}
+.settingTab {
+  height: 520px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}

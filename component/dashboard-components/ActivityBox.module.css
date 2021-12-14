@@ -1,0 +1,20 @@
+.gray {
+  width: 10px;
+  height: 10px;
+  background-color: #757A80;
+  margin: 0 1px 1px 0;
+}
+
+.lightPurple {
+  width: 10px;
+  height: 10px;
+  background-color: #AE51FF;
+  margin: 0 1px 1px 0;
+}
+
+.darkPurple {
+  width: 10px;
+  height: 10px;
+  background-color: #961EFF;
+  margin: 0 1px 1px 0;
+}

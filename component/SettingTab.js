@@ -8,8 +8,8 @@ const SettingTab=()=>{
 
     /*
     const router = useRouter();
-    
-    const [isSignup,setIsSignup] = useState(true); 
+
+    const [isSignup,setIsSignup] = useState(true);
     const thisPath = router.pathname;
     if(thisPath==="/Login"){
         setIsSignup(false)
@@ -20,13 +20,13 @@ const SettingTab=()=>{
     */
     return (
         <div className={style.tab}>
-            <Link href='#'> 
+            <Link href='/'> 
                 <a><FontAwesomeIcon icon={faUserCircle}/></a>
             </Link>
             <Link href='#'>
                 <a><FontAwesomeIcon icon={faCog}/></a>
             </Link>
-        
+
             {<Link href='/Signup'>
                 <a><FontAwesomeIcon icon={faUserPlus}/></a>
             </Link>}
