@@ -1,4 +1,5 @@
 import style from '../styles/SignUpBox.module.css'
+import Link from 'next/link'
 const SignUpBox=()=>{
     return (
         <div className={style.SignUpBox}>
@@ -30,7 +31,9 @@ const SignUpBox=()=>{
                     <label htmlFor="confirmInputPassword1">Confirm Your Password</label>
                     <input type="confirmpassword" className="form-control" id="confirmInputPassword1" placeholder="Password Again"/>
                 </div>
-                <button type="submit" className="btn">Submit</button>
+                <Link href='/' passHref>
+                    <button type="submit" className="btn">Submit</button>
+                </Link>
             </form>
         </div>
     )

@@ -23,7 +23,7 @@ const SettingTab=()=>{
             <Link href='/'> 
                 <a><FontAwesomeIcon icon={faUserCircle}/></a>
             </Link>
-            <Link href='#'>
+            <Link href=''>
                 <a><FontAwesomeIcon icon={faCog}/></a>
             </Link>
 

@@ -1,4 +1,5 @@
 import style from '../styles/loginBox.module.css'
+import Link from 'next/link'
 const LoginBox=()=>{
     const submitBtn=()=>{
         return // handle here
@@ -20,8 +21,10 @@ const LoginBox=()=>{
                 </div>
                 <button type="submit" className="btn" onClick={submitBtn}>Submit</button>
                 <div className={style.caution}>
-                    <p> Don’t have an account?</p> 
-                    <a className={style.signUpLink} onClick={signUpLink}>SignUp</a> 
+                    <p> Don’t have an account?</p>
+                    <Link href='/Signup'>
+                        <a className={style.signUpLink} onClick={signUpLink}>SignUp</a> 
+                    </Link>
                 </div>
             </form>
         </div>
