@@ -8,3 +8,5 @@
 ### UI Design
 
 - UI Design in Figma (Made by Earth) : [FIGMA](https://www.figma.com/file/vK6ayZG951BVAj2nzYaXqo/NewWebApp?node-id=0%3A1)
+
+![img](https://github.com/JinDamanee2544/TenDonBeContinue/blob/main/main-dashboard-design.png)
